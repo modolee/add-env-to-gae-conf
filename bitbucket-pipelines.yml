@@ -1,0 +1,15 @@
+image: node:lts-alpine
+
+pipelines:
+  default:
+    - step:
+        name: Deploy to Google App Engine
+        script:
+          - apk add bash
+          - chmod +x ./add-env-to-gae-conf.sh
+          - bash ./add-env-to-gae-conf.sh
+          - cat ./app.yaml
+          - pipe: atlassian/google-app-engine-deploy:0.7.3
+            variables:
+              KEY_FILE: $KEY_FILE
+              PROJECT: $PROJECT
