@@ -5,10 +5,10 @@
 - It's a script to add environment variables to Google App Engine config file (app.xml)
 - It adds environment variables to `app.xml` at deploy time.
 
-## Why are you made it?
+## Why did you make it?
 
-- Google App Engine config file is exposed environment variables in plain.
-- I just want to make more secure that.
+- Google App Engine config file is exposing environment variables in plain text.
+- I just want to make it more secure.
 
 ## When can I use it?
 
@@ -22,7 +22,7 @@
 
 ## Warning
 
-- It's only run correctly, when `app.xml` doesn't have `env_variables` field.
+- It's only run correctly when `app.xml` doesn't have `env_variables` field.
 - You have to migrate all environment variables from `app.xml` to CD tool settings.
 
 ## Example
