@@ -1,3 +1,4 @@
+| 💡 I found awesome library to solve this problem. [envsub](https://github.com/danday74/envsub) can substitute env variables in file to values. Just use that library, if you have same problem. 
 # Add env to Google App Engine config file
 
 ## What is it?
