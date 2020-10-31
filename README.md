@@ -4,21 +4,21 @@
 
 ## What is it?
 
-- It's a script to add environment variables to Google App Engine config file (app.xml)
-- It adds environment variables to `app.xml` at deployment.
+- It's a shell script to add environment variables to Google App Engine config file (app.xml)
+- It add environment variables to `app.xml` at deployment stage.
 
-## Why did you make it?
+## Why did you made it?
 
-- Google App Engine config file have been exposing environment variables in plain text.
-- I just wanted to make it more secure.
+- Google App Engine config file have been exposing environment variables in the form of plain text.
+- I wanted it to me more secure.
 
-## When can I use it?
+## When can I use the script?
 
 - When you deploy your code to Google App Engine via CD(Continuous Delivery) tool (e.g. Github Actions, Bitbucket pipelines, Circle CI, Etc.)
 
 ## How do I use it?
 
-- Add names of environment variable that you want to add to `app.xml` to `.env.array`
+- Add name of environment variables that you want to add to `.env.array` and `app.xml`
 - Add key/value of environment variable in your CD tool settings.
 - Add commands to run this script to your CD tool config file.
 
